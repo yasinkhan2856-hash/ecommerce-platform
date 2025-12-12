@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="303dp"
+        android:layout_height="277dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Onboarding illustration"
+        android:scaleType="fitCenter"
+        android:src="@drawable/firstpic"
+        app:layout_constraintBottom_toTopOf="@id/login_content_container"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <LinearLayout
+        android:id="@+id/login_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bg_curved_top_black"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="40dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+
+            android:background="@drawable/bg_input_dark_rounded"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+
+            android:hint="Email Address"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+
+            android:drawableStart="@drawable/ic_email_white"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="16dp" />
+        <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+
+        android:inputType="textPassword"
+
+        android:background="@drawable/bg_input_dark_rounded"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+
+        android:hint="Password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        android:drawableStart="@drawable/ic_lock_white"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="40dp" />
+        <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp" android:backgroundTint="#FF9800"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Sign Up"
+                android:textColor="#FF9800"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

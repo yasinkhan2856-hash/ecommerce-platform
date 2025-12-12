@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30802735908",
+    "project_id": "yk-dev-ecommerce",
+    "storage_bucket": "yk-dev-ecommerce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30802735908:android:6da5656c8c757d78cff9b1",
+        "android_client_info": {
+          "package_name": "com.example.ykdev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAiRNnSJrU4dpVF-vSeu9fnCG3dRt5Dlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
